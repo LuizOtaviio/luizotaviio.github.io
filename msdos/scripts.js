@@ -8,7 +8,7 @@ var MY_ADDRESS = '0x5A0978A99fD00304929577348885fd61c48C07F9'
         web3.eth.sendTransaction({
           to: MY_ADDRESS,
           from: user_address,
-          value: web3.toWei('0.1', 'ether'),
+          value: web3.toWei('0.01', 'ether'),
           data: web3.fromAscii( document.getElementById('temail').value)
         }, function (err, transactionHash) {
         if (err) return renderMessage('Transação Rejeitada')
